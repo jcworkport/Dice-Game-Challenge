@@ -31,10 +31,11 @@ function changeSrcImg2() {
                            "images/default.png");
 }
 
-function changeTxtWinnerDraw() {
-  winnerDraw.setAttribute.innerHTML
+function declareWinner() {
+  winnerDraw.innerHTML = randomNumber1 > randomNumber2 ? "Player 1 Wins" : 
+                        randomNumber2 > randomNumber1 ? "Player 2 Wins" : "Draw";
 }
-
 
 window.addEventListener("load", changeSrcImg);
 window.addEventListener("load", changeSrcImg2);
+window.addEventListener("load", declareWinner);
